@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33F5B08A-15A8-45E0-BA4A-DD4E6F286469}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>AccuSysCreator2</RootNamespace>
+    <AssemblyName>AccuSysCreator2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>http://localhost/AccuSysCreator2/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>drawer.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AccuSysCreator2.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AccuSysCreator2.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Abcnet28Lib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=d531470845f8eb5a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Abcnet28Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="GrnPrintingLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GrnPrintingLibrary\GrnPrintingLibrary\bin\Release\GrnPrintingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="mvcLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=eea2ef1f0feb85c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GrnPrintingLibrary\GrnPrintingLibrary\bin\Release\mvcLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Abcnet28Lib" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventClasses\OperationEventArgs.vb" />
+    <Compile Include="EventClasses\StyleButtonEventArgs.vb" />
+    <Compile Include="EventClasses\StyleClassEventArgs.vb" />
+    <Compile Include="FrameClasses\FramePartBaseClass.vb" />
+    <Compile Include="FrameClasses\FrameSize.vb" />
+    <Compile Include="FrameClasses\OperationParms.vb" />
+    <Compile Include="HelperClasses\AutoUpdateClass.vb" />
+    <Compile Include="MaterialsRequirements\FormMaterialReportWasteFactor.Designer.vb">
+      <DependentUpon>FormMaterialReportWasteFactor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsRequirements\FormMaterialReportWasteFactor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialsRequirements\FrameMaterialRegister.vb" />
+    <Compile Include="MaterialsRequirements\MaterialRequirementsReport.vb" />
+    <Compile Include="StyleClasses\AbstractStyleClass.vb" />
+    <Compile Include="Data\DataClass.vb" />
+    <Compile Include="Data\DataClassStyles.vb" />
+    <Compile Include="Enums\Enumerations.vb" />
+    <Compile Include="EventClasses\ProgressEventArgs.vb" />
+    <Compile Include="MaterialsRequirements\FrameMaterialClass.vb" />
+    <Compile Include="FrameClasses\FramePart.vb" />
+    <Compile Include="FrameClasses\FrontFrame.vb" />
+    <Compile Include="FrameClasses\PartEdge.vb" />
+    <Compile Include="FrameClasses\AccuOperation.vb" />
+    <Compile Include="HelperClasses\DirectoryList.vb" />
+    <Compile Include="HelperClasses\JobRetrieverClass.vb" />
+    <Compile Include="StyleClasses\StyleClassMetaData.vb" />
+    <Compile Include="StyleClasses\HingeStyleRule.vb" />
+    <Compile Include="StyleClasses\StyleFrameEdge.vb" />
+    <Compile Include="StyleClasses\StyleFramePart.vb" />
+    <Compile Include="StyleClasses\StyleHinge.vb" />
+    <Compile Include="StyleClasses\StyleThickness.vb" />
+    <Compile Include="View\formPurgeDatabase.Designer.vb">
+      <DependentUpon>formPurgeDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\formPurgeDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUserInput.designer.vb">
+      <DependentUpon>FormUserInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEditProgramText.Designer.vb">
+      <DependentUpon>frmEditProgramText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEditProgramText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameClasses\FrameListClass.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParamClasses\FrameStyle.vb" />
+    <Compile Include="ParamClasses\Hinge.vb" />
+    <Compile Include="ParamClasses\HingeRule.vb" />
+    <Compile Include="ParamClasses\MachineTool.vb" />
+    <Compile Include="ParamClasses\Thickness.vb" />
+    <Compile Include="PrintClasses\PrintClass.vb" />
+    <Compile Include="View\BarMain.Designer.vb">
+      <DependentUpon>BarMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\BarMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\dlgCustomOpening.Designer.vb">
+      <DependentUpon>dlgCustomOpening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\dlgCustomOpening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\dlgEditRailParts.Designer.vb">
+      <DependentUpon>dlgEditRailParts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\dlgEditRailParts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PanelAddNewClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ParmSetup.Designer.vb">
+      <DependentUpon>ParmSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\ParmSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserInputBox.Designer.vb">
+      <DependentUpon>UserInputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserInputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MaterialsRequirements\FormMaterialReportWasteFactor.resx">
+      <DependentUpon>FormMaterialReportWasteFactor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formPurgeDatabase.resx">
+      <DependentUpon>formPurgeDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUserInput.resx">
+      <DependentUpon>FormUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEditProgramText.resx">
+      <DependentUpon>frmEditProgramText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BarMain.resx">
+      <DependentUpon>BarMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\dlgCustomOpening.resx">
+      <DependentUpon>dlgCustomOpening.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\dlgEditRailParts.resx">
+      <DependentUpon>dlgEditRailParts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PanelAddNewClass.resx">
+      <DependentUpon>PanelAddNewClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ParmSetup.resx">
+      <DependentUpon>ParmSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserInputBox.resx">
+      <DependentUpon>UserInputBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FramePartImagePanel\FramePartImagePanel.vbproj">
+      <Project>{AECA7BFB-3BAD-4901-8759-29043DA77822}</Project>
+      <Name>FramePartImagePanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontFrameEventArgClasses\FrontFrameEventArgClasses.vbproj">
+      <Project>{61EFFB47-ACFC-490D-9A68-98538BB26542}</Project>
+      <Name>FrontFrameEventArgClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="drawer.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

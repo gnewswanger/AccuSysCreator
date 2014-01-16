@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[AccuSysCreator2.sln]
+SCC_Aux_Path = "\\qccipdc\SourceSafeDB"
+SCC_Project_Name = "$/qcc/Applications/AccuSysCreator2/AccuSysCreator2", BRWGAAAA
+
+[AccuSysCreator2.vbproj]
+SCC_Aux_Path = "\\qccipdc\SourceSafeDB"
+SCC_Project_Name = "$/qcc/Applications/AccuSysCreator2/AccuSysCreator2", BRWGAAAA

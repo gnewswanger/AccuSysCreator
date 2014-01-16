@@ -1,0 +1,49 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="GraphicDisplayBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlDarkDark</Value>
+    </Setting>
+    <Setting Name="RemotePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Qccfile\accusysfiles\AutoUpdate</Value>
+    </Setting>
+    <Setting Name="ParmsXmlFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Qccfile\accusysfiles\common\SetupParms.xml</Value>
+    </Setting>
+    <Setting Name="AccuSysCreatorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AccuSysCreator;Data Source=QCCSQL;Packet Size=4096;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AccuSysCreator;Data Source=QCCSQL;Packet Size=4096;</Value>
+    </Setting>
+    <Setting Name="JobofficeAsp1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://qccnt1/qccasp/joboffice.asp?mtext=</Value>
+    </Setting>
+    <Setting Name="JobofficeAsp2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&amp;mtype=job&amp;mtime=current</Value>
+    </Setting>
+    <Setting Name="ShipweekCardURI1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://qccnt1/qccasp/shipweek.asp?mdate=</Value>
+    </Setting>
+    <Setting Name="ShipWeekCardURI2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&amp;mtype=pcard&amp;schedule=mfg&amp;productline=1</Value>
+    </Setting>
+    <Setting Name="CsvFileDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Qccfile\accusysfiles\Jobdata</Value>
+    </Setting>
+    <Setting Name="CommonTemplateDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Qccfile\accusysfiles\Common\Templates</Value>
+    </Setting>
+    <Setting Name="ScheduleSearchStartOffset" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-10</Value>
+    </Setting>
+    <Setting Name="ScheduleSearchEndOffset" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="MaterialWasteFactor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
